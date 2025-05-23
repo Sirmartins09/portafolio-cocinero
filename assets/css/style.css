@@ -78,7 +78,7 @@ body, p, a, nav, li, span, div {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 60px 20px;
     padding-top: 5px;
 }
 
@@ -99,13 +99,13 @@ body, p, a, nav, li, span, div {
 }
 
 .texto-izquierda h1 {
-    font-size: 42px;
+    font-size: 48px;
     font-family: 'Righteous';
     margin-bottom: 20px;
 }
 
 .texto-izquierda h2 {
-    font-size: 42px;
+    font-size: 24px;
     font-weight: normal;
     text-align: center;
     font-family: 'Playfair Display', serif;
@@ -634,21 +634,29 @@ footer .arriba{
 
     .texto-izquierda {
         text-align: center;
+        padding-top: 80px;
     }
 
     .contenido-banner {
         margin-top: 20px;
     }
     /*sección inicio*/
-    .inicio{
-        padding: 60px;
-    }
-    .texto-izquierda h1{
-        padding-top: 50px;
-    }
-    .contenido-banner{
-        margin-bottom: 150px;
-    }
+    .contenido-inicio {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .texto-izquierda h1 {
+    font-size: 36px;
+  }
+
+  .texto-izquierda h2 {
+    font-size: 20px;
+  }
+
+  .contenedor-img img {
+    width: 160px;
+  }
     /*mis platos*/
     .plato-ficha{
         display: block;
@@ -659,4 +667,29 @@ footer .arriba{
     .plato-ficha{
         text-align: center;
     }
+}
+/* ===== MEDIA QUERY PARA 320px ===== */
+@media (max-width: 400px) {
+  .texto-izquierda h1 {
+    font-size: 28px;
+    padding-top: 10px;
+  }
+
+  .texto-izquierda h2 {
+    font-size: 18px;
+  }
+
+  .contenedor-img img {
+    width: 140px;
+  }
+    .contenido-banner {
+
+        margin-top:5px;
+        
+    }
+
+  .redes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
