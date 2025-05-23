@@ -1,0 +1,601 @@
+*{
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+/* Títulos elegantes */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Texto general limpio y profesional */
+body, p, a, nav, li, span, div {
+  font-family: 'Lato', sans-serif;
+}
+
+/*H E A D E R*/
+.contenedor-header {
+    background: 	#1C1C1C;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* espacio entre ítems */
+    padding: 20px 0;
+    margin: 0;
+}
+
+.contenedor-header nav ul li {
+    list-style: none;
+}
+
+.contenedor-header nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* o lo que prefieras */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* SECCION I N I C I O */
+.inicio {
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(../img/cocina.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 5px;
+}
+
+.contenido-inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+    padding: 40px;
+    gap: 40px;
+    flex-wrap: wrap; /* para responsive */
+}
+
+.texto-izquierda {
+    flex: 1;
+    text-align: left;
+}
+
+.texto-izquierda h1 {
+    font-size: 42px;
+    font-family: 'Righteous';
+    margin-bottom: 20px;
+}
+
+.texto-izquierda h2 {
+    font-size: 42px;
+    font-weight: normal;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.contenido-banner {
+    background-color: #726f6f;
+    border-radius: 40px;
+    margin-top: 120px;
+    padding: 20px;
+    text-align: center;
+    max-width: 350px;
+    flex: 1;
+}
+
+.contenedor-img img {
+    border: 10px solid #F5F5F5;
+    border-radius: 100%;
+    width: 80%;
+    max-width: 250px;
+    display: block;
+    margin: auto;
+}
+
+.redes {
+    margin-top: 40px;
+}
+
+.redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 0 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.redes a:hover {
+    background-color: #1CB698;
+}
+
+/* S O B R E  M I*/
+.sobremi {
+    padding: 80px 20px;
+    background-color: #F5F5F5;
+    color: 	#1C1C1C;
+    text-align: center;
+}
+
+.sobremi h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+     font-family: 'Playfair Display', serif;
+}
+
+.contenedor-sobremi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.foto-chef img {
+    width: 280px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.info-chef {
+    max-width: 600px;
+    text-align: left;
+}
+
+.info-chef h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.descripcion {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.datos-chef {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.datos-chef li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.datos-chef strong {
+    color: 	#3b240a;
+}
+
+.btn-cv {
+    display: inline-block;
+    background-color: #d4b483;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn-cv:hover {
+    background-color: #b59164;
+}
+
+
+
+/* P L A T O S*/
+.platos {
+    padding: 80px 20px;
+    background-color: #f8f4f0;
+    text-align: center;
+}
+
+.platos h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+.galeria-platos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.plato {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.plato img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.plato h3 {
+    margin-top: 15px;
+    font-size: 20px;
+     font-family: 'Playfair Display', serif;
+}
+
+.plato p {
+    font-size: 14px;
+    color: #555;
+}
+
+.btn-vermas {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #d4b483; /* color elegante tipo café/beige */
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none; /* saca el subrayado */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-vermas:hover {
+    background-color: #b59164; /* color más oscuro al pasar el mouse */
+}
+
+/* SECCION CONTACTO */
+.contacto{
+    background-image: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),url(../img/contacto.jpg);
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+}
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #d4b483;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+.contacto .col img{
+    width: 100%;
+}
+.contacto .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contacto .col .info ul{
+    list-style: none;
+}
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+}
+.contacto .col .info ul li i{
+    color: #1CB698;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/*SECCIÓN: MIS PLATOS*/
+
+h1{ text-align:center ;
+}
+
+#mis-platos {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.plato-ficha {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2rem;
+}
+
+.plato-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%; /* para que sea circular */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.plato-info {
+    flex: 1;
+}
+
+.plato-info h3 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.plato-info p {
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+    color: #444;
+}
+
+footer{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    color: #070707;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+
+/*BLOG "MIS RECETAS"*/
+.blog-titulo{
+    text-align: center;
+    padding-top: 20px;
+}
+.recetas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+.receta-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.receta-card:hover {
+    transform: scale(1.03);
+}
+.receta-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.receta-card h2 {
+    margin: 1rem;
+    font-size: 1.4rem;
+}
+.receta-card p {
+    margin: 0 1rem 1rem;
+    color: #555;
+}
+.receta-card a {
+    display: block;
+    margin: 0 1rem 1.5rem;
+    color: #8B4513;
+    text-decoration: none;
+    font-weight: bold;
+}
+/*PAGINA:BLOG "MIS RECETAS"*/
+.receta-detalle {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+.receta-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.receta-hero img {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.receta-hero__texto h1 {
+  font-size: 2rem;
+  color: #b33939;
+  margin-bottom: 0.5rem;
+}
+
+.receta-hero__texto .subtitulo {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.receta-info ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 1rem 0;
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+}
+
+.receta-info li {
+  background-color: #f8f8f8;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.ingredientes,
+.preparacion,
+.destaca {
+  margin-top: 2rem;
+}
+
+.ingredientes h2,
+.preparacion h2,
+.destaca h2 {
+  color: #b33939;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.ingredientes ul,
+.preparacion ol {
+  padding-left: 1.5rem;
+}
+
+.btn-volver {
+  display: inline-block;
+  margin-top: 2rem;
+  background-color: #b33939;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-volver:hover {
+  background-color: #8e2e2e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------*/
+/*---queries--------*/
+/*--------------------*/
+@media (max-width: 768px) {
+    .contenido-inicio {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .texto-izquierda {
+        text-align: center;
+    }
+
+    .contenido-banner {
+        margin-top: 20px;
+    }
+}
