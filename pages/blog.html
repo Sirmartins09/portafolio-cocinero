@@ -11,15 +11,16 @@
 </head>
 <body>
 <header class="contenedor-header">
-    <nav id="nav">
-        <ul>
-            <li><a href="../#inicio">Inicio</a></li>
-            <li><a href="../#sobremi">Sobre mí</a></li>
-            <li><a href="../#platos">Platos</a></li>
-            <li><a href="../#mis-recetas">Mis Recetas</a></li>
-            <li><a href="../#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+  <button id="btn-menu" class="menu-btn" aria-label="Abrir menú">&#9776;</button>
+  <nav id="nav">
+    <ul>
+      <li><a href="../#inicio">Inicio</a></li>
+      <li><a href="../#sobremi">Sobre mí</a></li>
+      <li><a href="../#platos">Platos</a></li>
+      <li><a href="../#mis-recetas">Mis Recetas</a></li>
+      <li><a href="../#contacto">Contacto</a></li>
+    </ul>
+  </nav>
 </header>
    
     <main class="receta-detalle">
@@ -230,6 +231,15 @@
             <a href="#"><i class="fa-solid fa-rss"></i></a>
         </div>
     </footer>
+        <script src="script.js"></script>
+    <script>
+  const btnMenu = document.getElementById('btn-menu');
+  const nav = document.getElementById('nav');
+
+  btnMenu.addEventListener('click', () => {
+    nav.classList.toggle('nav-visible');
+  });
+</script>
 
 </body>
 </html>
