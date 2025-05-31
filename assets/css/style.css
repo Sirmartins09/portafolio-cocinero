@@ -667,6 +667,23 @@ footer .arriba{
     .plato-ficha{
         text-align: center;
     }
+      .receta-hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .receta-hero img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .receta-hero__texto h1 {
+    font-size: 1.6rem;
+  }
+
+  .receta-hero__texto .subtitulo {
+    font-size: 1rem;
+  }
 }
 /* ===== MEDIA QUERY PARA 320px ===== */
 @media (max-width: 400px) {
